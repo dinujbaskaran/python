@@ -133,8 +133,166 @@
 # name = input("What's your name ?").strip().capitalize()
 # hello(name)
 
-def hello(to):
-    print("Hello,",to)
+# def hello(to):
+#     print("Hello,",to)
 
-name = input("What's your name? ").capitalize()
-hello(name)
+# name = input("What's your name? ").capitalize()
+# hello(name)
+
+# def add(x,y):
+#     z = x + y
+#     print(z)
+
+# def sub(x,y):
+#     z = x - y
+#     print (z)
+
+# def div(x,y): 
+#     z = x / y
+#     print(f"{z:.2f}")    
+
+
+# num1= int(input("What's the value of x : "))
+# num2 = int(input("What's the value of y : "))
+# add(num1,num2)
+# sub(num1,num2)
+# div(num1,num2)
+
+# def findevenorodd(x):
+#     if x >=0:
+#         if x % 2 ==0:
+#             print("even")
+#         else:
+#             print("odd")
+#     else:
+#         print("Invalid No.")
+
+# x = int(input("What's the value of x : "))
+# findevenorodd(x)
+
+# def findpassorfail(score):
+#     if score > 35 :
+#         print("Pass")
+#     else:
+#         print("fail")
+
+# a = int(input("Enter the marks : "))
+# findpassorfail(a)
+
+# def rangea(x,y):
+#     if y > x :
+#         for i in range(x,y+1):
+#             print(x," ",end="")
+#             x = x + 1
+#     else:
+#         print("Invalid range")    
+
+# p = int(input("Enter the number from the range starts : "))
+# q = int(input("Enter the number which the range start end : "))
+# rangea(p,q)
+
+# def hello():
+#     print("Hello, ", name)
+
+# name = input("What's your name? :").capitalize()
+# hello()
+
+# def main():
+#     name = input("What's your name? :").capitalize()
+#     hello(name)
+
+# def hello(name):
+#     print(f"Hello ,{name}")
+
+# main()
+
+# a=10
+# a=a**a
+# print(a)
+
+# def main():
+#     x = int(input("What's the value of x? :"))
+#     print("x square is",square(x))
+
+# def square(n):
+#     return n**2
+# main()
+
+# a=3 
+# print(type(a))
+
+# def get():
+#     guess = int(input("Enter a guess :"))
+#     return guess
+
+# def main():
+#     guess = get()
+#     print(guess)
+#     print(type(guess))
+
+main()
+
+vanakam = "Good morning, "
+
+def main():
+    global vanakam
+    hello("Is anyone there? ")
+    vanakam = "Good evening, "
+    hello("Ohhh,Hi ")
+
+def hello(input):
+    name = "Invalid"
+    print(input,vanakam)
+
+name = input("What's your name? ")
+
+main()
+
+name = input("What's your name? ")
+print("Good morning, ",name)
+
+marks = int(input("What's your marks: "))
+if marks >= 75:
+    print("A")
+elif marks >= 65:
+    print("B")
+elif marks >= 55:
+    print("C")
+elif marks >= 45:
+    print("S")
+else:
+    print("F")
+
+def main():
+    x = int(input("What's your x? :"))
+    if even_odd(x):
+        print("Even")
+    else:
+        print("Odd")
+
+def even_odd(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+def even_odd(n):
+    return True if n % 2 == 0 else False
+
+def even_odd(n):
+    return n % 2 == 0
+
+main()
+
+name = input("What's your name ? ").capitalize()
+
+match name:
+    case "Dinuj" |"Sarvathan":
+        print("Kondavil")        
+    case "Piraveen":
+        print("Kokuvil")    
+    case "Bachu":
+        print("Jaffna Town")    
+    case "Vindu":
+        print("Vadukottai")    
+
