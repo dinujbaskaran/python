@@ -230,15 +230,15 @@
 #     print(guess)
 #     print(type(guess))
 
-main()
+# main()
 
-vanakam = "Good morning, "
+# vanakam = "Good morning, "
 
-def main():
-    global vanakam
-    hello("Is anyone there? ")
-    vanakam = "Good evening, "
-    hello("Ohhh,Hi ")
+# def main():
+#     global vanakam
+#     hello("Is anyone there? ")
+#     vanakam = "Good evening, "
+#     hello("Ohhh,Hi ")
 
 def hello(input):
     name = "Invalid"
@@ -286,13 +286,36 @@ main()
 
 name = input("What's your name ? ").capitalize()
 
-match name:
-    case "Dinuj" |"Sarvathan":
-        print("Kondavil")        
-    case "Piraveen":
-        print("Kokuvil")    
-    case "Bachu":
-        print("Jaffna Town")    
-    case "Vindu":
-        print("Vadukottai")    
+if name =="Dinuj" or name == "Sarvathan":
+    print("Kondavil")
+elif name == "Piraveen":
+    print("Kokuvil")
+elif name == "Bachu":
+    print("Jaffna Town")
+else:
+    print("Invalid name")
+
+def main():
+    difficulty = input("Difficult or Casual ? ").capitalize()
+    players = input("Single player or Multiplayer ? ").capitalize()
+    if difficulty == "Difficult":
+        prefer("difficult")
+        if players == "Single player":
+            play("Clubs")
+        elif players == "Multiplayer":
+            play("Spades")
+    elif difficulty == "Casual":
+        prefer("Casual")
+        if players == "Single player":
+            play("Hearts")
+        elif players == "Multiplayer":
+            play("Diamond")
+
+def prefer(difficult):
+    print(f"You prefer to play {difficult} level")
+
+def play(player):
+    print(f"You are going to play {player}")
+
+main()
 
