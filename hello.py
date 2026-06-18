@@ -240,76 +240,107 @@
 #     vanakam = "Good evening, "
 #     hello("Ohhh,Hi ")
 
-def hello(input):
-    name = "Invalid"
-    print(input,vanakam)
+# def hello(input):
+#     name = "Invalid"
+#     print(input,vanakam)
 
-name = input("What's your name? ")
+# name = input("What's your name? ")
 
-main()
+# main()
 
-name = input("What's your name? ")
-print("Good morning, ",name)
+# name = input("What's your name? ")
+# print("Good morning, ",name)
 
-marks = int(input("What's your marks: "))
-if marks >= 75:
-    print("A")
-elif marks >= 65:
-    print("B")
-elif marks >= 55:
-    print("C")
-elif marks >= 45:
-    print("S")
-else:
-    print("F")
+# marks = int(input("What's your marks: "))
+# if marks >= 75:
+#     print("A")
+# elif marks >= 65:
+#     print("B")
+# elif marks >= 55:
+#     print("C")
+# elif marks >= 45:
+#     print("S")
+# else:
+#     print("F")
 
-def main():
-    x = int(input("What's your x? :"))
-    if even_odd(x):
-        print("Even")
-    else:
-        print("Odd")
+# def main():
+#     x = int(input("What's your x? :"))
+#     if even_odd(x):
+#         print("Even")
+#     else:
+#         print("Odd")
 
-def even_odd(n):
-    if n % 2 == 0:
-        return True
-    else:
-        return False
+# def even_odd(n):
+#     if n % 2 == 0:
+#         return True
+#     else:
+#         return False
 
-def even_odd(n):
-    return True if n % 2 == 0 else False
+# def even_odd(n):
+#     return True if n % 2 == 0 else False
 
-def even_odd(n):
-    return n % 2 == 0
+# def even_odd(n):
+#     return n % 2 == 0
 
-main()
+# main()
 
-name = input("What's your name ? ").capitalize()
+# name = input("What's your name ? ").capitalize()
 
-if name =="Dinuj" or name == "Sarvathan":
-    print("Kondavil")
-elif name == "Piraveen":
-    print("Kokuvil")
-elif name == "Bachu":
-    print("Jaffna Town")
-else:
-    print("Invalid name")
+# if name =="Dinuj" or name == "Sarvathan":
+#     print("Kondavil")
+# elif name == "Piraveen":
+#     print("Kokuvil")
+# elif name == "Bachu":
+#     print("Jaffna Town")
+# else:
+#     print("Invalid name")
+
+# def main():
+#     difficulty = input("Difficult or Casual ? ").capitalize()
+#     players = input("Single player or Multiplayer ? ").capitalize()
+#     if difficulty == "Difficult":
+#         prefer("difficult")
+#         if players == "Single player":
+#             play("Clubs")
+#         elif players == "Multiplayer":
+#             play("Spades")
+#     elif difficulty == "Casual":
+#         prefer("Casual")
+#         if players == "Single player":
+#             play("Hearts")
+#         elif players == "Multiplayer":
+#             play("Diamond")
+
+# def prefer(difficult):
+#     print(f"You prefer to play {difficult} level")
+
+# def play(player):
+#     print(f"You are going to play {player}")
+
+# main()
 
 def main():
     difficulty = input("Difficult or Casual ? ").capitalize()
+    if not(difficulty == "Difficult" or difficulty == "Casual"):
+            print("Enter a valid difficulty")
+            return
     players = input("Single player or Multiplayer ? ").capitalize()
-    if difficulty == "Difficult":
-        prefer("difficult")
-        if players == "Single player":
-            play("Clubs")
-        elif players == "Multiplayer":
-            play("Spades")
+    if not(players == "Multiplayer" or players == "Single player"):
+            print("Enter a valid number of players")
+            return
+    
+    if difficulty == "difficult":
+            prefer("difficult")
+            if players == "Single player":
+                play("Clubs")
+            elif players == "Multiplayer":
+                play("Spades")
     elif difficulty == "Casual":
-        prefer("Casual")
-        if players == "Single player":
-            play("Hearts")
-        elif players == "Multiplayer":
-            play("Diamond")
+            prefer("Casual")
+            if players == "Single player":
+                play("Hearts")
+            elif players == "Multiplayer":
+                play("Diamond")
 
 def prefer(difficult):
     print(f"You prefer to play {difficult} level")
@@ -318,4 +349,10 @@ def play(player):
     print(f"You are going to play {player}")
 
 main()
+
+i = 3
+while i!= 0:
+    print("meow")
+    i-=1
+
 
